@@ -9,7 +9,7 @@ pipeline {
         }
         stage('build') { 
             steps {
-                sh "cd application/tree/master && javac Main.java"
+                sh "cd application/ && javac Main.java"
             }
         }
         stage('run') { 
