@@ -9,12 +9,12 @@ pipeline {
         }
         stage('build') { 
             steps {
-                sh "cd application/ && javac main.java"
+                sh "cd application/ && javac Main.java"
             }
         }
         stage('run') { 
             steps {
-                sh "cd application/ && java main"
+                sh "cd application/ && java Main"
             }
         }
     }
