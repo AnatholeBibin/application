@@ -4,17 +4,17 @@ pipeline {
         stage('clone') { 
             steps {
                 sh "rm -rf *"
-                sh "git clone https://github.com/AnatholeBibin/application.git"
+                sh "git clone https://github.com/AnatholeBibin/application"
             }
         }
         stage('build') { 
             steps {
-                sh "cd application.git/ && javac main.java"
+                sh "cd application/ && javac main.java"
             }
         }
         stage('run') { 
             steps {
-                sh "cd application.git/ && java main"
+                sh "cd application/ && java main"
             }
         }
     }
