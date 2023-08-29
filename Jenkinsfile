@@ -4,7 +4,7 @@ pipeline {
         stage('clone') { 
             steps {
                 sh "rm -rf *"
-                sh "git clone https://github.com/priximmo/jenkins-helloworld"
+                sh "git clone https://github.com/AnatholeBibin/application.git"
             }
         }
         stage('build') { 
