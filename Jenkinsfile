@@ -7,11 +7,11 @@ pipeline {
                 sh "git clone https://github.com/AnatholeBibin/application"
             }
         }
-        // stage('build') { 
-        //     steps {
-        //         sh "cd application/ && javac Main.java"
-        //     }
-        // }
+        stage('build') { 
+            steps {
+                sh "cd application/ && javac Main.java"
+            }
+        }
         stage('run') { 
             steps {
                 sh "cd application/ && java Main"
